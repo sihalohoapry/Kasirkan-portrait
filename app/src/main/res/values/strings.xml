@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Kasirkan</string>
+    <string name="cari_produk">Cari Produk</string>
+    <string name="login">Login</string>
+    <string name="masukan_password">Masukan password</string>
+    <string name="masukan_user">Masukan user</string>
+    <string name="powered_by_aproject">Kasirkan</string>
+    <string name="logout">Logout</string>
+    <string name="tambahkan_ke_menu_pesanan">Tambahkan ke menu pesanan?</string>
+    <string name="pastikan_email_sudah_terdaftar_pada_aplikasi">Pastikan email sudah terdaftar pada aplikasi</string>
+    <string name="data_pelanggan">Data Pelanggan</string>
+    <string name="catatan">Catatan</string>
+    <string name="kosong">-</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="no_meja">No. Meja</string>
+    <string name="bayar">Bayar</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="kasir">Kasir</string>
+    <string name="no_transaction">No. Transaction</string>
+    <string name="tanggal_awal">Tanggal awal</string>
+    <string name="tanggal_akhir">Tanggal Akhir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="export_excel">Export Excel</string>
+    <string name="grafik">Grafik Penjualan</string>
+    <string name="cari_perangkat">Cari Perangkat</string>
+    <string name="print">Print</string>
+    <string name="tutup">Tutup</string>
+    <string name="_1">1</string>
+    <string name="id_transaksi">Id Transaksi</string>
+    <string name="nama_kasir">Nama Kasir</string>
+    <string name="pencarian_transaksi_perdasarkan">Pencarian transaksi perdasarkan :</string>
+    <string name="list_kasir">List Kasir</string>
+    <string name="no_data">No Data</string>
+    <string name="list_pesanan">List Pesanan</string>
+</resources>
