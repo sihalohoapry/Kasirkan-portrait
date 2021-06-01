@@ -6,6 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.annotation.Keep
 import com.sihaloho.cashierapp.R
 import com.sihaloho.cashierapp.databinding.ActivityCartBinding
 import com.sihaloho.cashierapp.preference.PrefManager
@@ -19,6 +20,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+@Keep
 class CartActivity : AppCompatActivity() {
     private val api by lazy { ApiConfig.getApi() }
     private val pref by lazy { PrefManager(this) }

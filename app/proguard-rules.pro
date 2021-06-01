@@ -19,12 +19,6 @@
 -keep class * implements com.google.gson.TypeAdapterFactory
 -keep class * implements com.google.gson.JsonSerializer
 -keep class * implements com.google.gson.JsonDeserializer
-#-keep  class com.sihaloho.cashierapp.ui.cart.AdapterCart
-#-keep  class com.sihaloho.cashierapp.ui.cart.CartActivity
-#-keep class androidx.recyclerview.widget.RecyclerView
-#-keepattributes *Annotation*, InnerClasses, Signature
-
-# Prevent R8 from leaving Data object members always null
 -keepclassmembers,allowobfuscation class * {
   @com.google.gson.annotations.SerializedName <fields>;
 }

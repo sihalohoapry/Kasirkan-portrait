@@ -4,13 +4,14 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.Keep
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.sihaloho.cashierapp.R
 import com.sihaloho.cashierapp.databinding.AdapterCartBinding
 import com.sihaloho.cashierapp.retrofit.response.cart.CartItem
 
-class AdapterCart(var context: Context,val listener: OnAdapterListener) : RecyclerView.Adapter<AdapterCart.CartHolder>() {
+@Keep class AdapterCart(var context: Context, val listener: OnAdapterListener) : RecyclerView.Adapter<AdapterCart.CartHolder>() {
 
     var list = ArrayList<CartItem>()
 
