@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class Product(
     @field:SerializedName("created_at")
-    val created_at : CreatedAt,
+    val created_at : String,
 
     @field:SerializedName("deleted_at")
     val deleted_at : Any,
@@ -25,5 +25,5 @@ data class Product(
     val nama_produk : String,
 
     @field:SerializedName("updated_at")
-    val updated_at : UpdetedAt,
+    val updated_at : String,
 )
