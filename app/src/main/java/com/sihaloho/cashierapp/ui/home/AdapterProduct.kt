@@ -24,10 +24,11 @@ class AdapterProduct : RecyclerView.Adapter<AdapterProduct.ProductViewHolder>() 
     inner class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
         val binding = AdapterProductBinding.bind(view)
+        val baseUrl = "https://kasirapp.kasirkan.com/uploads/produk/"
         fun bind(data: Product){
             with(binding){
                 Glide.with(itemView)
-                    .load(data.gambar_produk)
+                    .load(baseUrl+data.gambar_produk)
                     .placeholder(R.drawable.ic_image_load)
                     .error(R.drawable.ic_image_load)
                     .into(imageProduct)

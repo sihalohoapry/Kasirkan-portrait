@@ -49,13 +49,13 @@ class PrintActivity : AppCompatActivity() {
     private fun print() {
         val printables = arrayListOf<Printable>(
                 TextPrintable.Builder()
-                        .setText("Warung Makan Ibu" )
+                        .setText("ANGKRINGAN KOPIJOSS LIK BEJO" )
                         .setAlignment(DefaultPrinter.ALIGNMENT_CENTER)
                         .setFontSize(DefaultPrinter.FONT_SIZE_LARGE)
                         .setNewLinesAfter(1)
                         .build(),
                 TextPrintable.Builder()
-                        .setText("Kedaton, Bandar Lampung")
+                        .setText("Pringsewu, Lampung")
                         .setAlignment(DefaultPrinter.ALIGNMENT_CENTER)
                         .setNewLinesAfter(1)
                         .build(),

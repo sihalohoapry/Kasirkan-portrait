@@ -5,7 +5,6 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.inputmethod.EditorInfo
@@ -140,10 +139,10 @@ class MainActivity : AppCompatActivity() {
     private fun listProduct(){
         progresDialog?.show()
         api.produk(binding.etSearch.text.toString(), idCategory).enqueue(object :
-                Callback<ProductResponse> {
+            Callback<ProductResponse> {
             override fun onResponse(
-                    call: Call<ProductResponse>,
-                    response: Response<ProductResponse>
+                call: Call<ProductResponse>,
+                response: Response<ProductResponse>
             ) {
                 if (response.isSuccessful) {
                     progresDialog?.dismiss()
@@ -203,10 +202,10 @@ class MainActivity : AppCompatActivity() {
             setTitle("")
             setCancelable(false)
         }
-
+        val baseUrl = "https://kasirapp.kasirkan.com/uploads/produk/"
         cartDialog.findViewById<TextView>(R.id.tv_title).text = product.nama_produk
         Glide.with(baseContext)
-            .load(product.gambar_produk)
+            .load(baseUrl+product.gambar_produk)
             .into(cartDialog.findViewById<ImageView>(R.id.iv_product))
 
         val editQty = cartDialog.findViewById<TextView>(R.id.tv_qty)
